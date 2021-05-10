@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Trang chủ</title>
+	<style type="text/css">
+		body{
+			background-image:url('images/background.jpg');
+			background-repeat: no-repeat;
+			background-attachment: fixed;
+			background-size: 100% 100%;
+		}
+		.content{
+				weith: 80%;
+				background-color: white;
+				margin-left: 10%;
+				margin-top: 10%;
+				padding-bottom: 5%;
+				padding-left: 5%;
+		}
+		.text-center{
+			text-align: center;
+		}
+		.button{
+			padding: 10px;
+			font-weight: border;
+			font-size: 20px;
+		}
+		.yes-btn{
+			position: absolute;
+			top: 30%;
+			left: 45%;
+			background-color:  #00ff00;
+		}
+		.no-btn{
+			position: absolute;
+			top: 30%;
+			left: 60%;
+			background-color: red;
+		}
+	</style>
+</head>
+<body>
+	<div class="conteiner">
+		<header>
+			<nav>
+				
+			</nav>
+		</header>
+		
+		<div class="content">
+			<h1 class="text-center">LÀM NGƯỜI YÊU ANH NHÉ?</h1>
+			<a  href="success.html"><button class="button yes-btn">OK</button>		
+			<button id="ignore" onmouseover="changelocation()" class="button no-btn">BIẾN</button>
+		</div>
+		<footer></footer>
+	</div>
+	<script type="text/javascript">
+		function changelocation(){
+			var randomNumber = getRandomInt(50, 80);
+			document.getElementById('ignore').style.left=randomNumber+'%';
+			document.getElementById('ignore').style.top=randomNumber+'%';
+		}
+		function getRandomInt(min, max){
+			min= Math.ceil(min);
+			max= Math.floor(max);
+			return Math.floor(Math.random() * (max - min)+ min);
+		}
+	</script>
+</body>
+</html>
