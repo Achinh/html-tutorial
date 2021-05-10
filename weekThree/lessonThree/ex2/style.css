@@ -1,0 +1,12 @@
+.container{background: url(images/bg.gif);}
+.content{background-color: cornsilk; width: 50%; margin: 15px 0px; padding: 15px; 
+	}			
+.content{margin: 15px 25%;
+	border-style: dotted;
+	}
+.footer{background-color: #0ff; width: 200px; padding: 15px; border: 1px; border-radius: 15px;
+		font-style: italic;
+		text-align: center;
+		border-style: solid;
+		margin-left: 20px;
+		}
